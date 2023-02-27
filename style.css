@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.image img{
+    width: 9%;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+.name h1{
+    color: #4E5150;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.locate{
+    color: #A9A9A9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.option{
+    display: flex;
+    /* border: 2px solid red;  */
+}
+
+.post,
+.follower,
+.following{
+    /* border: 2px solid red;  */
+    background-color: #E5E5E5;
+    border-radius: 12px;
+    height: 10vh;
+    width: 8%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.post{
+    left: 37%;
+}
+
+.follower{
+    left: 38%;
+}
+
+.following{
+    left: 39%;
+}
+
+.image1{grid-area: one;}
+.image2{grid-area: two;}
+.image3{grid-area: three;}
+.image4{grid-area: four;}
+.image5{grid-area: five;}
+.image6{grid-area: six;}
+
+
+.grid-image{
+    display: grid;
+    grid-template-areas: "one two two"
+    "three three four"
+    "six five four";
+    /* border: 2px solid red; */
+    padding: 100px 250px 250px 250px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6{
+    border-radius: 12px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.bottom{
+    align-items: start;
+    /* height: 25vh; */
+    display: flex;
+    justify-content: center;
+    color: #B9BDCF;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: #B9BDCF;
+}
+
