@@ -56,11 +56,10 @@
 
 .image1 {grid-area: one;}
 .image2 {grid-area: two;}
-.image3 {grid-area: three;}
+.image3 {grid-area: three}
 .image4 {grid-area: four;}
 .image5 {grid-area: five;}
-.image6 {grid-area: six;}
-
+.image6 { grid-area: six;}
 
 .grid-image {
     display: grid;
@@ -100,87 +99,36 @@
 
 @media screen and (max-width:600px) {
 
-    .image img {
-        width: 17%;
+    .image img{
+        width: 25%;
     }
 
-    .name h1,
-    .location {
-        font-size: 15px;
+    .name h1{
+        font-size: 20px;
     }
 
-    /* .option{
-        /* padding-left: 20px; */
-        
+    .post,
+    .follower,
+    .following{
+        width: 25%;
+    }
+    
+    .post{
+        margin-left: -130px;
+    }
 
-        .post {
-            width: 20%;
-            margin-left: -90px;
-        }
-        
-        .follower {
-            width: 25%;
-        }
+    .grid-image{
+        padding-left: 70px;
+    }
 
-        .following {
-            width: 25%;
-        }
-        
-        .post,
-        .follower,
-        .following {
-            padding-left: 11px;
-            padding-top: 12px;
-}
+    .grid-image img{
+        /* width: 25vw; */
+        border: 2px solid red;
+    }
 
-.grid-image{
-    /* border: 2px solid red; */
-    padding-left: 20px;
-}
-
-.image1{
-    width: 27vw;
-    height: 20vh;
-}
-
-.image2{
-    width: 60vw;
-    height: 20vh;
-}
-
-.image3{
-    width: 60vw;
-    height: 20vh;
-}
-
-.image5{
-    width: 27vw; 
-}
-
-.image6{
-    width: 27vw; 
-}
-
-.image4{
-    height: 45vh;
-    width: 30vw;
-}
-
-.image1 {grid-area: one;}
-.image2 {grid-area: two;}
-.image3 {grid-area: three;}
-.image4 {grid-area: four;}
-.image5 {grid-area: five;}
-.image6 {grid-area: six;}
-
-.grid-image {
-    display: grid;
-    grid-template-areas: "one two two"
-        "three three four"
-        "six five four";
-    /* border: 2px solid red; */
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
+    .image2{
+        width: 50vw;
+    }
+    
+    
 }
