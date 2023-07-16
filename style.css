@@ -57,9 +57,9 @@
 .image1 {grid-area: one;}
 .image2 {grid-area: two;}
 .image3 {grid-area: three}
-.image4 {grid-area: four;}
+.image4 {grid-area: four;}  
 .image5 {grid-area: five;}
-.image6 { grid-area: six;}
+.image6 {grid-area: six;}
 
 .grid-image {
     display: grid;
@@ -67,7 +67,7 @@
         "three three four"
         "six five four";
     /* border: 2px solid red; */
-    padding: 100px 250px 250px 250px;
+    padding: 10% 25%;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -99,36 +99,51 @@
 
 @media screen and (max-width:600px) {
 
-    .image img{
-        width: 25%;
-    }
+    
 
-    .name h1{
-        font-size: 20px;
+    .name h1,
+    .locate{
+        font-size: 13px;
     }
-
+    
+    
+    
     .post,
     .follower,
     .following{
-        width: 25%;
+        width: 25vw;
+        height: 20%;
+        font-size: 12px;
     }
-    
+
     .post{
-        margin-left: -130px;
+        margin-left: -100px;
     }
 
-    .grid-image{
-        padding-left: 70px;
-    }
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    border-radius: 6px;
+}
+  
+.grid-image {
+    
+    padding: 10% 5%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+ 
 
-    .grid-image img{
-        /* width: 25vw; */
-        border: 2px solid red;
-    }
+    
 
-    .image2{
-        width: 50vw;
-    }
+   
+
+   
+
+  
     
     
 }
